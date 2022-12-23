@@ -1,0 +1,34 @@
+/* .subscription-img{
+    display: none;
+
+} */
+#main-slider {
+    height: 675px !important;
+    width: 675px !important;
+}
+
+#thumbnail {
+    cursor: pointer;
+    opacity: 0.5;
+    width: 70px;
+    height: 70px;
+    display: flex;
+}
+
+#thumbnail.is-active {
+    opacity: 1;
+}
+
+.splide__track {
+    width: 100%;
+    height: 100%;
+}
+
+.splide__list {
+    height: 100%;
+}
+
+.img-responsive {
+    width: 100%;
+    height: 100%;
+}
