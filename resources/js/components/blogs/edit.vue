@@ -5,7 +5,7 @@
           <div class="card">
             <div class="card-body">
               <div class="form-group">
-                <label>Tên tin tức</label>
+                <label>Tên bài viết</label>
                 <vs-input
                   type="text"
                   size="default"
@@ -82,7 +82,7 @@
                     </vs-select>
               </div>
               <div class="form-group">
-                <label>Danh muc</label>
+                <label>Danh mục</label>
                 <vs-select class="selectExample" v-model="objData.category" placeholder="Danh mục" @change="findCategoryType()">
                    <vs-select-item
                     value="0"
@@ -95,9 +95,8 @@
                     :key="'f'+index"
                   />
                 </vs-select>
-                
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label>Loại danh mục</label>
                 <vs-select class="selectExample"
                   v-model="objData.type_cate"
@@ -133,7 +132,7 @@
                     :key="'f' + index"
                   />
                 </vs-select>
-            </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -223,10 +222,10 @@ export default {
         this.addBlog(this.objData).then(response => {
           this.loadings(false);
           this.$router.push({name:'listBlogs'});
-          this.$success('Thêm tin tức thành công');
+          this.$success('Thêm bài viết thành công');
         }).catch(error => {
           this.loadings(false);
-          this.$error('Thêm tin tức thất bại');
+          this.$error('Thêm bài viết thất bại');
         })
       }
     },

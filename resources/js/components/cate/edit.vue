@@ -5,7 +5,7 @@
           <div class="card">
             <div class="card-body">
               <div class="row">
-                <div class="col-md-3"><h4 class="card-title">Sửa danh mục sản phẩm</h4></div>
+                <div class="col-md-3"><h4 class="card-title">Sửa danh mục mẫu thiết kế</h4></div>
                 <div class="col-md-6"></div>
                 <div class="col-md-3">
                   </div>
@@ -36,14 +36,14 @@
                     :title="'breadcrumb-'"
                   ></image-upload>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label>Mô tả</label>
                     <vs-textarea v-model="objData.description" />
                 </div>
                 <div class="form-group">
                 <label>Nội dung</label>
                  <TinyMce v-model="objData.content" />
-                </div>
+                </div> -->
                 <div class="form-group">
                   <label for="exampleInputName1">Trạng thái</label>
                   <vs-select v-model="objData.status"

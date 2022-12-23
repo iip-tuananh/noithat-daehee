@@ -4,7 +4,7 @@
         <div class="col-md-12 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title" >Danh sách tin tức</h4>
+              <h4 class="card-title" >Danh sách bài viết</h4>
               <router-link class="nav-link" :to="{name:'addBlogs'}">
                 <vs-button type="gradient" style="float:right;">Thêm mới</vs-button>
               </router-link>
@@ -13,8 +13,8 @@
                 <template slot="thead">
                   <vs-th>Tiêu đề</vs-th>
                   <vs-th>Danh mục</vs-th>
-                  <vs-th>Danh mục con</vs-th>
-                  <vs-th>Loại</vs-th>
+                  <!-- <vs-th>Danh mục con</vs-th>
+                  <vs-th>Loại</vs-th> -->
                   <vs-th>Hành động</vs-th>
                 </template>
                 <template slot-scope="{data}">
@@ -22,10 +22,10 @@
                     <vs-td >{{JSON.parse(tr.title)[0].content}}</vs-td>
                     <vs-td v-if="tr.cate != null">{{JSON.parse(tr.cate.name)[0].content}}</vs-td>
                     <vs-td  v-if="tr.cate == null">--Trống--</vs-td>
-                    <vs-td v-if="tr.type_cate != null">{{JSON.parse(tr.type_cate.name)[0].content}}</vs-td>
+                    <!-- <vs-td v-if="tr.type_cate != null">{{JSON.parse(tr.type_cate.name)[0].content}}</vs-td>
                     <vs-td v-if="tr.type_cate == null">-----</vs-td>
                     <vs-td v-if="tr.type_news == 'tin-hot'">Tin Hot</vs-td>
-                    <vs-td v-if="tr.type_news == 'tin-khuyen-mai'">Tin Khuyến Mãi</vs-td>
+                    <vs-td v-if="tr.type_news == 'tin-khuyen-mai'">Tin Khuyến Mãi</vs-td> -->
                     <vs-td v-if="tr.type_news == null">-----</vs-td>
                     <vs-td >
                       <router-link :to="{name:'editBlog',params:{id:tr.id}}">

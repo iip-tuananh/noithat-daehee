@@ -3,8 +3,8 @@
       <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title" >Danh sách sản phẩm</h4>
-            <p class="card-description">Thêm mới hoặc sửa sửa sản phẩm</p>
+            <h4 class="card-title" >Danh sách mẫu thiết kế</h4>
+            <p class="card-description">Thêm mới hoặc sửa sửa mẫu thiết kế</p>
 
             <router-link class="nav-link" :to="{name:'createProduct'}">
               <vs-button type="gradient" style="float:right;">Thêm mới</vs-button>
@@ -13,10 +13,10 @@
             <vs-input icon="search" placeholder="Search" v-model="keyword" @keyup="searchProduct()"/>
             <vs-table stripe :data="list" max-items="10" pagination>
               <template slot="thead">
-                <vs-th>Ảnh sản phẩm</vs-th>
-                <vs-th>Tên sản phẩm</vs-th>
-                <vs-th>Kho</vs-th>
-                <vs-th>Số lượng</vs-th>
+                <vs-th>Ảnh mẫu thiết kế</vs-th>
+                <vs-th>Tên mẫu thiết kế</vs-th>
+                <vs-th>Danh mục</vs-th>
+                <!-- <vs-th>Số lượng</vs-th> -->
                 <vs-th>Hành động</vs-th>
               </template>
               <template slot-scope="{data}">
@@ -25,7 +25,7 @@
                   <vs-td>{{JSON.parse(tr.name)[0].content}}</vs-td>
                   <vs-td v-if="tr.cate != null">{{JSON.parse(tr.cate)[0].content}}</vs-td>
                   <vs-td v-if="tr.cate == null">--Trống--</vs-td>
-                  <vs-td >{{tr.qty}}</vs-td>
+                  <!-- <vs-td >{{tr.qty}}</vs-td> -->
                   <vs-td >
                     <router-link :to="{name:'edit_product',params:{id:tr.id}}">
                       <vs-button
@@ -102,7 +102,7 @@ export default {
         type:'confirm',
         color: 'danger',
         title: `Bạn có chắc chắn`,
-        text: 'Xóa sản phẩm này',
+        text: 'Xóa mẫu thiết kế này',
         accept:this.destroy
       })
     }

@@ -121,7 +121,7 @@
                   <label>Logo</label>
                   <image-upload type="avatar" v-model="objData.logo" :title="'logo'"></image-upload>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label>Ảnh Popup</label>
                   <image-upload type="avatar" v-model="objData.popupimage" :title="'popupimage'"></image-upload>
                 </div>
@@ -141,7 +141,7 @@
                       <vs-select-item  value="1" text="Hiện" />
                       <vs-select-item  value="0" text="Ẩn" />
                     </vs-select>
-                </div>
+                </div> -->
               <vs-button color="primary" @click="saveSetting">Lưu</vs-button>
             </div>
           </div>

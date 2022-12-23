@@ -6,7 +6,7 @@
           <div class="card">
             <div class="card-body">
               <h4 class="card-title" @click="listCate">Danh sách danh mục</h4>
-              <p class="card-description">Thêm mới hoặc sửa chửa danh mục sản phẩm</p>
+              <p class="card-description">Thêm mới hoặc sửa chửa danh mục mẫu thiết kế</p>
               <router-link class="nav-link" :to="{name:'add_category'}">
                 <vs-button type="gradient" style="float:right;">Thêm mới</vs-button>
               </router-link>
@@ -19,9 +19,9 @@
               <vs-table max-items="5" pagination :data="list">
                 <template slot="thead">
                   <vs-th>ID</vs-th>
-                  <vs-th>Tên</vs-th>
-                  <vs-th>Avatar</vs-th>
-                  <vs-th>Title</vs-th>
+                  <vs-th>Tên danh mục</vs-th>
+                  <vs-th>Hình ảnh</vs-th>
+                  <!-- <vs-th>Title</vs-th> -->
                   <vs-th>Hành động</vs-th>
                 </template>
                 <template slot-scope="{data}">
@@ -31,7 +31,7 @@
                     <vs-td :data="tr.id">
                       <vs-avatar size="70px" :src="tr.avatar" />
                     </vs-td>
-                    <vs-td :data="tr.id">{{tr.path}}</vs-td>
+                    <!-- <vs-td :data="tr.id">{{tr.path}}</vs-td> -->
                     <vs-td :data="tr.id">
                       <router-link :to="{name:'edit_category',params:{id:tr.id}}">
                         <vs-button

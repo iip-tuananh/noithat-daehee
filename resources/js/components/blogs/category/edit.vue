@@ -5,11 +5,9 @@
           <div class="card">
             <div class="card-body">
               <div class="row">
-                <div class="col-md-3"><h4 class="card-title">Sửa danh mục tin tức</h4></div>
+                <div class="col-md-3"><h4 class="card-title">Sửa danh mục bài viết</h4></div>
                 <div class="col-md-6"></div>
               </div>
-              
-              
               <!-- <p class="card-description">Basic form elements</p> -->
               <form class="forms-sample">
                 <div class="form-group">
@@ -34,16 +32,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <vs-input
                     class="w-100"
                     v-model="objData.path"
                     font-size="40px"
                     label-placeholder="Link"
                   />
-                </div>
+                </div> -->
                 <div class="form-group">
-                  <label for="exampleSelectGender">Avatar</label>
+                  <label for="exampleSelectGender">Hình ảnh</label>
                   <image-upload v-model="objData.avatar" type="avatar"></image-upload>
                 </div>
                 <div class="form-group">
@@ -62,7 +60,7 @@
       <div class="row fixxed">
         <div class="col-12">
           <div class="saveButton">
-            <vs-button color="primary"@click="saveEdit()">Cập nhật</vs-button>
+            <vs-button color="primary" @click="saveEdit()">Cập nhật</vs-button>
           </div>
         </div>
       </div>

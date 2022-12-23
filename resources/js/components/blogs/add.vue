@@ -123,7 +123,7 @@
                 />
               </vs-select>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label>Loại danh mục</label>
               <vs-select
                 class="selectExample"
@@ -158,7 +158,7 @@
                     :key="'f' + index"
                   />
                 </vs-select>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

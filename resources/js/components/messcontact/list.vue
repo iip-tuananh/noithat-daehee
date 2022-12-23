@@ -18,7 +18,7 @@
                   <vs-tr :key="indextr" v-for="(tr, indextr) in data">
                     <vs-td :data="tr.id">{{tr.id}}</vs-td>
                     <vs-td :data="tr.name">{{tr.name}}</vs-td>
-                     <vs-td :data="tr.email">{{tr.email}}</vs-td>
+                    <vs-td :data="tr.email">{{tr.email}}</vs-td>
                     <vs-td :data="tr.phone">{{tr.phone}}</vs-td>  
                     <vs-td :data="tr.mess">{{tr.mess}}</vs-td>     
                   </vs-tr>

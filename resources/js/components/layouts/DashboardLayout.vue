@@ -89,34 +89,34 @@ export default {
       objSidebar: [
         {
           icon: "mdi mdi-crosshairs-gps menu-icon",
-          name: "Mẫu thiết kế",
+          name: "Thiết kế nội thất",
           route_name: "",
           sub: [
-            {
-              name: "Danh sách mẫu thiết kế",
-              path: "/product",
-            },
             {
               name: "Danh mục mẫu thiết kế",
               path: "/product/category",
             },
             {
-              name: "Loại mẫu thiết kế",
-              path: "/product/type",
-            }
+              name: "Danh sách mẫu thiết kế",
+              path: "/product",
+            },
+            // {
+            //   name: "Loại mẫu thiết kế",
+            //   path: "/product/type",
+            // }
           ],
         },
-        {
-          icon: "mdi mdi-newspaper menu-icon",
-          name: "Dịch vụ",
-          route_name: "",
-          sub: [
-            {
-              name: "Danh sách ",
-              path: "/service",
-            }
-          ],
-        },
+        // {
+        //   icon: "mdi mdi-newspaper menu-icon",
+        //   name: "Dịch vụ",
+        //   route_name: "",
+        //   sub: [
+        //     {
+        //       name: "Danh sách ",
+        //       path: "/service",
+        //     }
+        //   ],
+        // },
         {
           icon: "mdi mdi-newspaper menu-icon",
           name: "Trang nội dung",
@@ -134,30 +134,31 @@ export default {
           route_name: "",
           sub: [
             {
-              name: "Danh sách bài viết",
-              path: "/blogs",
-            },
-            {
               name: "Danh mục bài viết",
               path: "/blog/category",
             },
             {
-              name: "Loại bài viết",
-              path: "/blog/type",
+              name: "Danh sách bài viết",
+              path: "/blogs",
             },
+            
+            // {
+            //   name: "Loại bài viết",
+            //   path: "/blog/type",
+            // },
           ],
         },
-        {
-          icon: "mdi mdi-newspaper menu-icon",
-          name: "Banner quảng cáo",
-          route_name: "",
-          sub: [
-            {
-              name: "Danh sách",
-              path: "/bannerads",
-            }
-          ],
-        },
+        // {
+        //   icon: "mdi mdi-newspaper menu-icon",
+        //   name: "Banner quảng cáo",
+        //   route_name: "",
+        //   sub: [
+        //     {
+        //       name: "Danh sách",
+        //       path: "/bannerads",
+        //     }
+        //   ],
+        // },
         {
           icon: "mdi mdi-file-image menu-icon",
           name: "Website",
@@ -175,39 +176,39 @@ export default {
               name: "Thư viện ảnh",
               path: "/prize",
             },
-            {
-              name: "Video",
-              path: "/video",
-            },
-            {
-              name: "Quản lý Founder",
-              path: "/founder",
-            },
+            // {
+            //   name: "Video",
+            //   path: "/video",
+            // },
+            // {
+            //   name: "Quản lý Founder",
+            //   path: "/founder",
+            // },
             {
               name: "Cài đặt chung",
               path: "/setting",
             },
           ],
         },
-        {
-          icon: "mdi mdi-shopping-music menu-icon",
-          name: "Quản lý đơn hàng",
-          route_name: "",
-          sub: [
-            {
-              name: "Đơn hàng đã thanh toán",
-              path: "/bill/paymented",
-            },
-            {
-              name: "Đơn hàng cần kiểm tra",
-              path: "/bill/draft",
-            },
-            {
-              name: "Đơn hàng chưa hoàn tất",
-              path: "/bill/Unpayment",
-            },
-          ],
-        },
+        // {
+        //   icon: "mdi mdi-shopping-music menu-icon",
+        //   name: "Quản lý đơn hàng",
+        //   route_name: "",
+        //   sub: [
+        //     {
+        //       name: "Đơn hàng đã thanh toán",
+        //       path: "/bill/paymented",
+        //     },
+        //     {
+        //       name: "Đơn hàng cần kiểm tra",
+        //       path: "/bill/draft",
+        //     },
+        //     {
+        //       name: "Đơn hàng chưa hoàn tất",
+        //       path: "/bill/Unpayment",
+        //     },
+        //   ],
+        // },
         // {
         //   icon: "mdi mdi-shopping-music menu-icon",
         //   name: "Quản lý khuyến mãi",
@@ -230,17 +231,17 @@ export default {
             }
           ],
         },
-        {
-          icon: "mdi mdi-newspaper menu-icon",
-          name: "Quản lý Review",
-          route_name: "",
-          sub: [
-            {
-              name: "Danh sách dịch vụ",
-              path: "/reviewCus",
-            }
-          ],
-        },
+        // {
+        //   icon: "mdi mdi-newspaper menu-icon",
+        //   name: "Quản lý Review",
+        //   route_name: "",
+        //   sub: [
+        //     {
+        //       name: "Danh sách dịch vụ",
+        //       path: "/reviewCus",
+        //     }
+        //   ],
+        // },
       ],
     };
   },

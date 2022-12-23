@@ -5,11 +5,11 @@
           <div class="card">
             <div class="card-body">
               <div class="form-group">
-                <label>Tên sản phẩm</label>
+                <label>Tên mẫu thiết kế</label>
                 <vs-input
                   type="text"
                   size="default"
-                  placeholder="Tên sản phẩm"
+                  placeholder="Tên mẫu thiết kế"
                   class="w-100"
                   v-model="objData.name[0].content"
                 />
@@ -27,7 +27,7 @@
                       v-if="index != 0"
                       type="text"
                       size="default"
-                      placeholder="Tên sản phẩm"
+                      placeholder="Tên mẫu thiết kế"
                       class="w-100 inputlang"
                       v-model="objData.name[index].content"
                     />
@@ -47,9 +47,9 @@
                     </div>
                 </div>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <PdfUpload />
-              </div>
+              </div> -->
               <div class="form-group">
                 <label>Mô tả ngắn</label>
                 <TinyMce
@@ -64,11 +64,11 @@
                 </div>
               </div>
               <div class="form-group">
-                <label>Ảnh sản phẩm</label>
-                <ImageMulti v-model="objData.images" :title="'san-pham'"/> 
+                <label>Ảnh mẫu thiết kế</label>
+                <ImageMulti v-model="objData.images" :title="'mau-thiet-ke'"/> 
               </div>
-              <div class="form-group">
-                <label>Giá Sản phẩm</label>
+              <!-- <div class="form-group">
+                <label>Giá mẫu thiết kế</label>
                 <vs-input
                   type="number"
                   size="default"
@@ -86,7 +86,7 @@
                   class="w-100"
                   v-model="objData.discount"
                 />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -96,12 +96,12 @@
               <div class="form-group">
                 <label>Trạng thái</label>
                 <vs-select v-model="objData.status">
-                  <vs-select-item value="1" text="Còn hàng" />
-                  <vs-select-item value="0" text="Hết hàng" />
+                  <vs-select-item value="1" text="Hiện" />
+                  <vs-select-item value="0" text="Ẩn" />
                 </vs-select>
               </div>
               <div class="form-group">
-                <label>Danh mục sản phẩm</label>
+                <label>Danh mục mẫu thiết kế</label>
                 <vs-select
                   class="selectExample"
                   v-model="objData.category"
@@ -120,7 +120,7 @@
                   />
                 </vs-select>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label>Loại danh mục</label>
                 <vs-select
                   class="selectExample"
@@ -136,7 +136,7 @@
                     :key="'v' + index"
                   />
                 </vs-select>
-              </div>
+              </div> -->
               <div class="form-group">
                 <label>Hiển thị trang chủ</label>
                 <vs-select v-model="objData.discountStatus">
@@ -258,7 +258,7 @@ export default {
       if(this.objData.content[0].content == '') this.errors.push('Nội dung không được để trống');
       if(this.objData.description[0].content == '') this.errors.push('Mô tả không được để trống');
       if(this.objData.images.length == 0) this.errors.push('Vui lòng chọn ảnh');
-      if(this.objData.category == 0) this.errors.push('Chọn danh mục sản phẩm');
+      if(this.objData.category == 0) this.errors.push('Chọn danh mục mẫu thiết kế');
       if (this.errors.length > 0) {
         this.errors.forEach((value, key) => {
           this.$error(value);
@@ -271,7 +271,7 @@ export default {
           .then((response) => {
             this.loadings(false);
             this.$router.push({ name: "listProduct" });
-            this.$success("Thêm sản phẩm thành công");
+            this.$success("Thêm mẫu thiết kế thành công");
             this.$route.push({ name: "listProduct" });
           })
           .catch((error) => {
