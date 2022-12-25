@@ -34,10 +34,10 @@ class HomeController extends Controller
         $data['founder'] = Founder::where(['status'=>1])->get(['id','image','name']);
         $data['reviewcus'] = ReviewCus::where(['status'=>1])->get();
         $data['gioithieu'] = PageContent::where(['slug'=>'gioi-thieu','language'=>'vi'])->first(['id','title','content','image','description']);
-        $data['homePro'] = Product::where(['status'=>1,'discountStatus'=>1])
-            ->orderBy('id','DESC')
-            ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
-            ->paginate(12);
+        $data['homePro'] = Product::where(['status' => 1, 'discountStatus' => 1])
+            ->limit(5)
+            ->orderBy('id', 'DESC')
+            ->get(['id', 'category', 'name', 'discount', 'price', 'images', 'slug', 'cate_slug', 'type_slug', 'description']);
         $data['categoryHome'] = Category::with([
             'typeCate' => function ($query) {
                 $query->with(['typetwo'])->where('status',1)->orderBy('id','DESC')->select('cate_id','id', 'name','avatar','slug','cate_slug'); 
@@ -46,6 +46,7 @@ class HomeController extends Controller
             $query->setRelation('product', $query->product->take(5));
             return $query;
         });
+
         $data['bennerHome'] = Banner::where(['status'=>1])->get(['id','image','link','title','description']);
         return view('home',$data);
     }

@@ -16,7 +16,7 @@ Tin tức nổi bật và mới nhất
        <div class="container">
           <div class="content">
              <ul class="list-inline">
-                <li class="list-inline-item"><a href="{{route('home')}}"><img src="{{url('frontend/images/home.png')}}" class="img-fluid" alt="{{$setting->company}}"></a></li>
+                <li class="list-inline-item"><a href="{{route('home')}}"><img src="{{ asset('frontend/images/home.png') }}" class="img-fluid" alt="{{$setting->company}}"></a></li>
                 <li class="list-inline-item"><a href="{{url()->current()}}">{{$title_page}} </a></li>
              </ul>
           </div>
@@ -36,7 +36,7 @@ Tin tức nổi bật và mới nhất
                          <a href="{{route('detailBlog',['slug'=>$blog[0]->slug])}}" title="{{languageName($blog[0]->title)}}">{{languageName($blog[0]->title)}}</a>
                       </h1>
                       <div class="readnow tm-left"><a href="{{route('detailBlog',['slug'=>$blog[0]->slug])}}">xem
-                         ngay <img src="{{url('frontend/images/read-right.png')}}" class="img-fluid" alt="{{languageName($blog[0]->title)}}"></a>
+                         ngay <img src="{{ asset('frontend/images/read-right.png') }}" class="img-fluid" alt="{{languageName($blog[0]->title)}}"></a>
                       </div>
                    </div>
                 </div>
@@ -105,7 +105,7 @@ Tin tức nổi bật và mới nhất
                         @endforeach
                       </div>
                    </div>
-                   <div class="item">
+                   <div class="item d-md-none">
                       <div class="list-part">
                          <div class="row">
                             @foreach ($partner as $item)

@@ -51,5 +51,5 @@
           </div>
        </div>
     </div>
-    <div class="reserved"> <span>© D.HomeLuxury Design 2022. Design by <a href="https://sbtsoftware.vn/">SBT Software</a></span> </div>
+    <div class="reserved"> <span>© Nội thất DAEHEE Design 2022. Design by <a href="https://sbtsoftware.vn/">SBT Software</a></span> </div>
  </footer>

@@ -17,7 +17,7 @@
                                 <a href="{{ route('home') }}">Trang chủ</a>
                             </li>
                             <li class="">
-                                <a href="{{ route('aboutUs') }}{{ route('aboutUs') }}">Giới thiệu</a>
+                                <a href="{{ route('aboutUs') }}">Giới thiệu</a>
                             </li>
                             <li class="pages-services">
                                 <a href="{{ route('allProduct') }}">Thiết kế nội thất</a>
