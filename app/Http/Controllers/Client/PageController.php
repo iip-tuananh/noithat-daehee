@@ -18,6 +18,8 @@ use App\models\website\Prize;
 use App\models\website\Founder;
 use App\models\website\Partner;
 use App\models\PageContent;
+use App\models\website\Setting;
+
 class PageController extends Controller
 {
     public function orderNow()

@@ -1103,6 +1103,7 @@
 		flex-wrap: wrap;
 	}
 	main #news .content .right {
+	   padding-top: 20px;
 	   width: 70%;
 	}
 

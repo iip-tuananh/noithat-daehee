@@ -16,7 +16,7 @@ class ProductController extends Controller
 {
     public function allProduct()
     {
-        $data['list'] = Product::where('status',1)->orderBy('id','DESC')->select('id','category','name','discount','price','images','slug','cate_slug','type_slug')
+        $data['list'] = Product::where('status',1)->orderBy('id','DESC')->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
         ->paginate(12);
         $data['title'] = "Tất cả sản phẩm";
         $data['content'] = 'none';
@@ -131,7 +131,7 @@ class ProductController extends Controller
 
         return response()->json(['html'=>$view]);
     }
-    public function detail_product($cate,$type,$id)
+    public function detail_product($cate,$slug)
     {
         $data['product'] = Product::with([
             'typeCate' => function ($query) {
@@ -140,7 +140,7 @@ class ProductController extends Controller
             'cate' => function ($query) {
                 $query->where('status',1)->limit(5)->select('id','name','avatar','slug'); 
             },
-        ])->where('slug',$id)->first(['id','name','images','type_cate','category','sku','discount','price','content','size','description','slug','preserve','created_at']);
+        ])->where(['slug'=>$slug, 'cate_slug'=>$cate])->first(['id','name','images','type_cate','category','sku','discount','price','content','size','description','slug','preserve','created_at']);
         $data['productlq'] = Product::where('category',$data['product']->category)->get(['id','name','images','discount','price','slug','cate_slug','type_slug','description']);
         return view('product.detail',$data);
     }

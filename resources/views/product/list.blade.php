@@ -16,7 +16,7 @@ Danh sách {{$title}}
 <main>
     <section id="banner-cate">
        <div class="avarta">
-        <img data-src="{{$cateno->imagehome}}" class="img-fluid lazyloaded" width="100%" alt="{{$title}}" src="{{$cateno->imagehome}}">
+        <img data-src="{{ isset($cateno) ? $cateno->imagehome : $banner[0]->image}}" class="img-fluid lazyloaded" width="100%" alt="{{$title}}" src="{{ isset($cateno) ? $cateno->imagehome : $banner[0]->image}}">
        </div>
     </section>
     <section id="service">
@@ -38,7 +38,7 @@ Danh sách {{$title}}
                             <div class="col-md-4">
                                 <div class="item">
                                     <div class="avarta">
-                                        <a href="{{route('detailProduct',['cate'=>$item->cate_slug,'type'=>$item->type_slug ? $item->type_slug : 'loai','id'=>$item->slug])}}" target="_blank">
+                                        <a href="{{route('detailProduct',['cate'=>$item->cate_slug,'slug'=>$item->slug])}}" target="_blank">
                                             <img class="img-fluid lazyload" alt="{{languageName($item->name)}}" width="100%" data-src="{{$img[0]}}">
                                         </a>
                                     </div>

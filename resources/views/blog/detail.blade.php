@@ -19,7 +19,7 @@
           <div class="content">
              <ul class="list-inline">
                 <li class="list-inline-item"><a href="{{route('home')}}">
-                   <img src="{{url('frontend/images/home.png')}}" class="img-fluid" alt="{{route('home')}}"></a>
+                   <img src="{{asset('frontend/images/home.png')}}" class="img-fluid" alt="{{route('home')}}"></a>
                 </li>
                 <li class="list-inline-item"><a href="">Tin tức</a></li>
                 <li class="list-inline-item">
@@ -76,9 +76,9 @@
                              </div>
                             @endforeach
                          </div>
-                         <div class="swiper-button-next"><a href="javascript:0"><img src="{{url('frontend/images/right1.png')}}" class="img-fluid" alt="Right"></a>
+                         <div class="swiper-button-next"><a href="javascript:0"><img src="{{asset('frontend/images/right1.png')}}" class="img-fluid" alt="Right"></a>
                          </div>
-                         <div class="swiper-button-prev"><a href="javascript:0"><img src="{{url('frontend/images/left1.png')}}" class="img-fluid" alt="Left"></a>
+                         <div class="swiper-button-prev"><a href="javascript:0"><img src="{{asset('frontend/images/left1.png')}}" class="img-fluid" alt="Left"></a>
                          </div>
                       </div>
                    </div>
@@ -124,7 +124,7 @@
                         @endforeach
                       </div>
                    </div>
-                   <div class="item">
+                   <div class="item d-md-none">
                       <div class="list-part">
                          <div class="row">
                             @foreach ($partner as $item)
@@ -168,9 +168,9 @@
                     </div>
                    @endforeach
                 </div>
-                <div class="swiper-button-next"><a href="javascript:0"><img src="{{url('frontend/images/right1.png')}}" class="img-fluid" alt="Right"></a>
+                <div class="swiper-button-next"><a href="javascript:0"><img src="{{asset('frontend/images/right1.png')}}" class="img-fluid" alt="Right"></a>
                 </div>
-                <div class="swiper-button-prev"><a href="javascript:0"><img src="{{url('frontend/images/left1.png')}}" class="img-fluid" alt="Left"></a>
+                <div class="swiper-button-prev"><a href="javascript:0"><img src="{{asset('frontend/images/left1.png')}}" class="img-fluid" alt="Left"></a>
                 </div>
              </div>
           </div>

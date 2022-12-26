@@ -22,8 +22,8 @@ $img = json_decode($product->images);
         arrows: true,
         fade: true,
         asNavFor: '.slider-nav',
-        prevArrow: '<span class="previous"><img src="{{url('frontend/images/left2.png')}}"></span>',
-        nextArrow: '<span class="next"><img src="{{url('frontend/images/right2.png')}}"></span>',
+        prevArrow: '<span class="previous"><img src="{{asset('frontend/images/left1.png')}}"></span>',
+        nextArrow: '<span class="next"><img src="{{asset('frontend/images/right1.png')}}"></span>',
     });
     $('.slider-nav').slick({
         autoplay: false,
@@ -119,12 +119,12 @@ $img = json_decode($product->images);
                     <div class="col-md-3 col-sm-6 col-6">
                         <div class="item">
                            <div class="avarta"><a
-                              href="{{route('detailProduct',['cate'=>$item->cate_slug,'type'=>$item->type_slug ? $item->type_slug : 'loai','id'=>$item->slug])}}"><img
+                              href="{{route('detailProduct',['cate'=>$item->cate_slug,'slug'=>$item->slug])}}"><img
                               src="{{ $imglq[0]}}" class="img-fluid"
                               width="100%" alt="{{languageName($item->name)}}"></a></div>
                            <div class="info">
                               <h3>
-                                 <a href="{{route('detailProduct',['cate'=>$item->cate_slug,'type'=>$item->type_slug ? $item->type_slug : 'loai','id'=>$item->slug])}}"
+                                 <a href="{{route('detailProduct',['cate'=>$item->cate_slug,'slug'=>$item->slug])}}"
                                     title="{{languageName($item->name)}}">{{languageName($item->name)}}</a>
                               </h3>
                               <div class="linea">{!!languageName($item->description)!!}</div>

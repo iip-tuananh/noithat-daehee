@@ -17,7 +17,7 @@
                                 <a href="{{ route('home') }}">Trang chủ</a>
                             </li>
                             <li class="">
-                                <a href="{{ route('aboutUs') }}{{ route('aboutUs') }}">Giới thiệu</a>
+                                <a href="{{ route('aboutUs') }}">Giới thiệu</a>
                             </li>
                             <li class="pages-services">
                                 <a href="{{ route('allProduct') }}">Thiết kế nội thất</a>
@@ -39,7 +39,7 @@
                             <li class="">
                                 <a href="{{ route('lienHe') }}">Liên hệ</a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="javascript:0">
                                     <img src="{{ url('frontend/images/search.png') }}" class="img-fluid"
                                         alt="{{ $setting->company }}">
@@ -51,7 +51,7 @@
                                             class="form-control" name="keyword" placeholder="Tìm kiếm ...">
                                     </form>
                                 </div>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </div>
@@ -74,13 +74,13 @@
         </div>
         <nav id="menu">
             <ul>
-                <li>
+                {{-- <li>
                     <form action="https://dhomesluxury.com/ket-qua-tim-kiem" method="post">
                         <input type="hidden" name="_token" value="UH44csGCVA1GMO1ax6MkmGzhUBFs2XZsWCD9z8ru"> <input
                             type="text" class="form-control" name="keyword" placeholder="Tìm kiếm ...">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
-                </li>
+                </li> --}}
                 <li><a href="{{ route('home') }}">Trang chủ</a> </li>
                 <li><a href="{{ route('aboutUs') }}">Giới thiệu</a> </li>
                 <li>
