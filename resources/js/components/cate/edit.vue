@@ -44,13 +44,27 @@
                 <label>Nội dung</label>
                  <TinyMce v-model="objData.content" />
                 </div> -->
-                <div class="form-group">
-                  <label for="exampleInputName1">Trạng thái</label>
-                  <vs-select v-model="objData.status"
-                  >
-                      <vs-select-item  value="1" text="Hiện" />
-                      <vs-select-item  value="0" text="Ẩn" />
-                    </vs-select>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputName1">Trạng thái</label>
+                      <vs-select v-model="objData.status"
+                      >
+                          <vs-select-item  value="1" text="Hiện" />
+                          <vs-select-item  value="0" text="Ẩn" />
+                        </vs-select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputName1">Hiển thị trang chủ</label>
+                      <vs-select v-model="objData.home_status"
+                      >
+                          <vs-select-item  value="1" text="Hiện" />
+                          <vs-select-item  value="0" text="Ẩn" />
+                        </vs-select>
+                    </div>
+                  </div>
                 </div>
               </form>
             </div>
@@ -90,6 +104,7 @@ export default {
         description:"",
         imagehome: "",
         status: "",
+        home_status: ""
       },
       lang:[],
       img: "",
@@ -157,6 +172,7 @@ export default {
             path: "",
             avatar: "",
             status: "",
+            home_status: "",
           }
         }else{
           this.objData = response.data;

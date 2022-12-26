@@ -38,15 +38,7 @@ class HomeController extends Controller
             ->orderBy('id','DESC')
             ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
             ->paginate(12);
-        $data['categoryHome'] = Category::with([
-            'typeCate' => function ($query) {
-                $query->with(['typetwo'])->where('status',1)->orderBy('id','DESC')->select('cate_id','id', 'name','avatar','slug','cate_slug'); 
-            }
-        ])->where('status',1)->limit(4)->orderBy('id','ASC')->get(['id','name','imagehome','avatar','slug','content','description'])->map(function ($query) {
-            $query->setRelation('product', $query->product->take(5));
-            return $query;
-        });
-        $data['bennerHome'] = Banner::where(['status'=>1])->get(['id','image','link','title','description']);
+        $data['categoryHome'] = Category::where(['status'=>1, 'home_status'=>1])->limit(4)->orderBy('id','ASC')->get(['id','name','imagehome','avatar','slug','content','description']);
         return view('home',$data);
     }
 }

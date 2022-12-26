@@ -15,50 +15,26 @@
 @section('content')
     <main>
         <section id="banner">
-            <h1 style="display: none;">Công ty TNHH đầu tư thương mại và dịch vụ mộc phát</h1>
-            <h4 style="display: none;">NỘI THẤT D.HOME LUXURY</h4>
             <div class="swiper-container slide-banner">
                 <div class="swiper-wrapper">
-                    @foreach ($bennerHome as $bennerHome)
+                    @foreach ($banners as $banner)
                         <div class="swiper-slide">
                             <div class="item">
                                 <div class="avarta">
                                     <a href="#">
-                                        <img src="{{ $bennerHome->image }}" class="img-fluid" width="100%"
-                                            alt="{{ $bennerHome->name }}">
+                                        <img src="{{ $banner->image }}" class="img-fluid" width="100%"
+                                            alt="{{ $banner->name }}">
                                     </a>
                                 </div>
                             </div>
                         </div>
                     @endforeach
-                    {{-- <div class="swiper-slide">
-                        <div class="item">
-                           <div class="avarta">
-                              <a href="" target="_blank">
-                                    <img src="https://dhomesluxury.com/uploads/images/banner-trang-chu-675832810.jpg"
-                                       class="img-fluid" width="100%"
-                                       alt="http://dhomesluxury.com/uploads/images/banner-trang-chu-675832810.jpg">
-                              </a>
-                           </div>
-                        </div>
-                  </div>
-                  <div class="swiper-slide">
-                        <div class="item">
-                           <div class="avarta">
-                              <a href="" target="_blank">
-                                    <img src="https://dhomesluxury.com/uploads/images/banner-trang-chu-1240778606.jpg"
-                                       class="img-fluid" width="100%"
-                                       alt="http://dhomesluxury.com/uploads/images/banner-trang-chu-1240778606.jpg">
-                              </a>
-                           </div>
-                        </div>
-                  </div> --}}
                 </div>
                 <div class="swiper-button-next"><a href="javascript:0"><img
-                            src="https://dhomesluxury.com/frontend/images/right.png" class="img-fluid" alt="Trang chủ"></a>
+                            src="{{url('frontend/images/right.png')}}" class="img-fluid" alt="Trang chủ"></a>
                 </div>
                 <div class="swiper-button-prev"><a href="javascript:0"><img
-                            src="https://dhomesluxury.com/frontend/images/left.png" class="img-fluid" alt="Trang chủ"></a>
+                            src="{{url('frontend/images/left.png')}}" class="img-fluid" alt="Trang chủ"></a>
                 </div>
             </div>
         </section>
@@ -105,7 +81,7 @@
                                 <div style="width: 100%; display: inline-block;">
                                     <div class="button-6">
                                         <div class="eff-6"></div>
-                                        <a href="https://dhomesluxury.com/gioi-thieu.html" class="btn">Xem thêm</a>
+                                        <a href="{{route('aboutUs')}}" class="btn">Xem thêm</a>
                                     </div>
                                 </div>
                             </div>

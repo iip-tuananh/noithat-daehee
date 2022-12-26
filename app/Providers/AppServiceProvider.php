@@ -57,7 +57,7 @@ class AppServiceProvider extends ServiceProvider
                 $query->setRelation('product', $query->product->take(5));
                 return $query;
             });
-            $banner = Banner::where(['status'=>1])->get(['id','image','link','title','description']);
+            $banners = Banner::where(['status'=>1])->get(['id','image','link','title','description']);
             $cartcontent = session()->get('cart', []);
             $viewold = session()->get('viewoldpro', []);
             $compare = session()->get('compareProduct', []);
@@ -74,7 +74,7 @@ class AppServiceProvider extends ServiceProvider
                 'setting' => $setting,
                 'pageContent' => $pageContent,
                 'lang' => $lang,
-                'banner'=>$banner,
+                'banners'=>$banners,
                 'profile' =>$profile,
                 'categoryhome'=> $categoryhome,
                 'cartcontent'=>$cartcontent,

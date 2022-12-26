@@ -39,6 +39,7 @@ class Category extends Model
                 $query->content = $request->content;
                 $query->description = $request->description;
                 $query->status = $request->status;
+                $query->home_status = $request->home_status;
                 $query->avatar = $request->avatar;
                 $query->imagehome = $request->imagehome;
                 $query->save();
@@ -51,6 +52,7 @@ class Category extends Model
                 $query->content = $request->content;
                 $query->description = $request->description;
                 $query->status = $request->status;
+                $query->home_status = $request->home_status;
                 $query->avatar = $request->avatar;
                 $query->imagehome = $request->imagehome;
                 $query->save();
@@ -64,6 +66,7 @@ class Category extends Model
             $query->slug = to_slug($request->name[0]['content']);
             $query->content = $request->content;
             $query->status = $request->status;
+            $query->home_status = $request->home_status;
             $query->description = $request->description;
             $query->avatar = $request->avatar;
             $query->imagehome = $request->imagehome;
