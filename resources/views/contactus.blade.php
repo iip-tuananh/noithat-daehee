@@ -33,14 +33,21 @@ Liên hệ với chúng tôi
 		  <div class="content">
 			 <div class="row">
 				<div class="col-md-6">
-				   <form action="" method="POST" enctype="multipart/form-data" autocomplete="off">
+				   <form action="{{route('postcontact')}}" method="POST" enctype="multipart/form-data" autocomplete="off">
+					@csrf
 					  <div class="left">
 						 <div class="info">
 							<h3>thông tin cá nhân</h3>
-							<div class="item"><input type="text" class="form-control" placeholder="Họ và tên" name="fullname" required="">
+							<div class="item"><input type="text" class="form-control" placeholder="Họ và tên" name="name" required="">
 							</div>
 							<div class="item"><input type="number" class="form-control" placeholder="Số điện thoại (*)" min="1" name="phone" required=""></div>
 							<div class="item"><input type="text" class="form-control" placeholder="Email" name="email" required=""></div>
+							<div class="item">
+								<textarea class="form-control" id="" placeholder="Tin nhắn" required="" name="mess" rows="3"></textarea>
+							 </div>
+							 <div class="item pb-5 justify-content-center d-flex">
+								<button type="submit" class="btn btn-primary w-25">Gửi</button>
+							 </div>
 						 </div>
 					  </div>
 				   </form>

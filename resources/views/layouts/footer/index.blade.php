@@ -1,4 +1,4 @@
-<footer class="footer-hb pt-5">
+<footer class="footer-hb">
    <div class="click-top"> <a href="javascript:0"><i class="fa fa-angle-double-up"></i></a> </div>
    <div class="container">
       <div class="content">
