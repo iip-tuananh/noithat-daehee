@@ -6,7 +6,7 @@
                     <div class="col-md-2">
                         <div class="logo">
                             <a href="{{ route('home') }}">
-                                <img src="{{ $setting->logo }}" style="width:300px:" class="img-fluid logo-scr"
+                                <img src="{{ $setting->logo }}" style="height: 68px;" class="img-fluid logo-scr"
                                     alt="{{ $setting->company }}">
                             </a>
                         </div>
