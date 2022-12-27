@@ -25,7 +25,7 @@ class HomeController extends Controller
         $data['bannerqc'] = BannerAds::where('status',1)->get(['name','image','id','content','description']);
         $data['hotnews'] = Blog::where([
             ['status','=',1]
-        ])->orderBy('id','DESC')->limit(6)->get(['id','title','slug','created_at','image','description']);
+        ])->orderBy('id','DESC')->limit(6)->get(['id','title','slug','created_at','image','description','content']);
         $data['typePro'] = TypeProduct::with(['category'])->where('status',1)->get();
         $data['partner'] = Partner::where(['status'=>1])->get(['id','image','name','link']);
         $data['video'] = Video::where(['status'=>1])->get(['id','image','name','link']);

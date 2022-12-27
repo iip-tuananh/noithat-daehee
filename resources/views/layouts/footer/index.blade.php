@@ -1,12 +1,12 @@
-<footer class="footer-hb">
+<footer class="footer-hb pt-5">
    <div class="click-top"> <a href="javascript:0"><i class="fa fa-angle-double-up"></i></a> </div>
    <div class="container">
       <div class="content">
-         <div class="logo">
+         {{-- <div class="logo">
             <a href="{{route('home')}}">
                <img width="150" src="{{ $setting->logo }}" class="img-fluid" alt="{{$setting->logo}}">
             </a>
-         </div>
+         </div> --}}
          <div class="info-footer">
             <div class="row">
                <div class="col-lg-5">
@@ -14,7 +14,7 @@
                      <div class="name">{{$setting->company}}</div>
                      <div class="list-place">
                         <p>
-                           <img src="{{url('frontend/images/place1.png')}}" class="img-fluid" alt="Địa chỉ">Địa chỉ: {{$setting->address1}}</p>
+                        <img src="{{url('frontend/images/place1.png')}}" class="img-fluid" alt="Địa chỉ">Địa chỉ: {{$setting->address1}}</p>
                         <p><img src="{{url('frontend/images/place2.png')}}" class="img-fluid" alt="Số điện thoại">Hotline: {{$setting->phone1}}</p>
                         <p><img src="{{url('frontend/images/place3.png')}}" class="img-fluid" alt="Email">{{$setting->email}}</p>
                         <p><img src="{{url('frontend/images/place4.png')}}" class="img-fluid" alt="Website">{{route('home')}}</p>

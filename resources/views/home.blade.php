@@ -31,10 +31,10 @@
                     @endforeach
                 </div>
                 <div class="swiper-button-next"><a href="javascript:0"><img
-                            src="{{url('frontend/images/right.png')}}" class="img-fluid" alt="Trang chủ"></a>
+                            src="{{ asset('frontend/images/right.png') }}" class="img-fluid" alt="right"></a>
                 </div>
                 <div class="swiper-button-prev"><a href="javascript:0"><img
-                            src="{{url('frontend/images/left.png')}}" class="img-fluid" alt="Trang chủ"></a>
+                            src="{{ asset('frontend/images/left.png') }}" class="img-fluid" alt="left"></a>
                 </div>
             </div>
         </section>
@@ -87,8 +87,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="subscription-img">
+                    <div class="container pl-0">
+                        <div class="subscription-img">  
                             @foreach ($pageContent as $pageContent)
                                 <img src="{{ $pageContent->image }}" class="img-responsive" alt="">
                             @endforeach
@@ -241,26 +241,26 @@
                     </div>
                     <div class="swiper-container slide-news">
                         <div class="swiper-wrapper">
-                            @foreach ($hotnews as $hotnews)
+                            @foreach ($hotnews as $hotnew)
                             <div class="swiper-slide">
                                 <div class="item wow fadeIn" data-wow-delay=".4s">
                                     <div class="avarta"><a
-                                            href="{{ route('detailBlog', ['slug'=>$hotnews->slug]) }}"
-                                            title="{{languageName($hotnews->title)}}"><img
-                                                src="{{$hotnews->image}}"
+                                            href="{{ route('detailBlog', ['slug'=>$hotnew->slug]) }}"
+                                            title="{{languageName($hotnew->title)}}"><img
+                                                src="{{$hotnew->image}}"
                                                 class="img-fluid" width="100%"
-                                                alt="{{languageName($hotnews->title)}}"></a>
+                                                alt="{{languageName($hotnew->title)}}"></a>
                                     </div>
                                     <div class="info">
                                         <h3>
-                                            <a href="{{ route('detailBlog', ['slug'=>$hotnews->slug]) }}"
-                                                title="{{languageName($hotnews->title)}}">{{languageName($hotnews->title)}}</a>
+                                            <a href="{{ route('detailBlog', ['slug'=>$hotnew->slug]) }}"
+                                                title="{{languageName($hotnew->title)}}">{{languageName($hotnew->title)}}</a>
                                         </h3>
                                         <div class="date">
-                                            {{$hotnews->created_at}}
+                                            {{date('d-m-Y', strtotime($hotnew->created_at))}}
                                         </div>
                                         <div class="desc">
-                                            <p style="text-align: justify;">NỘI THẤT DAEHEE</p>
+                                            <p style="text-align: justify;">{!!languageName($hotnew->content)!!}</p>
                                         </div>
                                     </div>
                                 </div>

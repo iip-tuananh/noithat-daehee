@@ -4145,7 +4145,7 @@
                                   <div class="row">
                                     <div class="c-box-item col-sm">
                                           <div class="c-item-img">
-                                             <img src="https://dhomesluxury.com/uploads/images/trang-noi-dung-262883067.jpg"
+                                             <img style="clip-path: circle(160px at 50% 50%);" src="{{asset('frontend/images/imgGioithieu2.jpg')}}"
                                                 alt="" srcset="">
                                           </div>
                                     </div>
@@ -4167,7 +4167,7 @@
                                           <div class="c-box-description">
                                              <div class="c-item-tittle">
                                                 <p class="c-tittle">
-                                                   Nội thất DAEHEE Luôn đặt ra và tuân theo sứ mệnh: “Kiến tạo không gian, ươm mầm hạnh phúc”
+                                                   Nội thất DAEHEE Luôn đặt ra và tuân theo sứ mệnh: “Kiến tạo không gian, ươm mầm hạnh phúc”.
                                                 </p>
                                              </div>
                                           </div>
@@ -4192,14 +4192,14 @@
                                        <div class="c-box-description">
                                           <div class="c-item-tittle">
                                              <p class="c-tittle">
-                                                Với ngôn ngữ thiết kế đa dạng, từ cổ điển, hiện đại đến phong cách Bắc Âu Scandinavian… chúng tôi vinh dự là đơn vị thiết kế và thi công nội thất tại những căn hộ cao cấp như: Times City, Royal City, Vinhomes Riverside, Keangnam, Gamuda Garden… Ngoài ra, với kinh nghiệm nhiều năm trong nghề, nội thất DAEHEE cũng để lại ấn tượng khi thi công hàng trăm biệt thự, nhà hàng, nhà phố sang trọng
+                                                Với ngôn ngữ thiết kế đa dạng, từ cổ điển, hiện đại đến phong cách Bắc Âu Scandinavian… chúng tôi vinh dự là đơn vị thiết kế và thi công nội thất tại những căn hộ cao cấp như: Times City, Royal City, Vinhomes Riverside, Keangnam, Gamuda Garden… Ngoài ra, với kinh nghiệm nhiều năm trong nghề, nội thất DAEHEE cũng để lại ấn tượng khi thi công hàng trăm biệt thự, nhà hàng, nhà phố sang trọng.
                                              </p>
                                           </div>
                                        </div>
                                  </div>
                                  <div class="c-box-item col-sm">
                                        <div class="c-item-img">
-                                          <img src="https://dhomesluxury.com/uploads/images/trang-noi-dung-262883067.jpg"
+                                          <img style="clip-path: circle(160px at 50% 50%);" src="{{asset('frontend/images/imgGioithieu2.jpg')}}"
                                              alt="" srcset="">
                                        </div>
                                  </div>

@@ -6,7 +6,7 @@
 Tin tức nổi bật và mới nhất
 @endsection
 @section('image')
-{{url(''.$banner[0]->image)}}
+{{url(''.$banners[0]->image)}}
 @endsection
 @section('css')
 @endsection

@@ -2,7 +2,7 @@
 Author: W3layouts
 Author URL: http://w3layouts.com
  */
-html {
+ html {
     scroll-behavior: smooth; }
 
 body,
@@ -4537,7 +4537,8 @@ button:hover {
         width: 65%; } }
 @media all and (max-width: 1366px) {
     .w3l-newsletter .form-inner-cont {
-        width: 73%; } }
+        width: 85%;
+        } }
 @media all and (max-width: 1280px) {
     .w3l-newsletter .form-inner-cont {
         width: 75%; } }
