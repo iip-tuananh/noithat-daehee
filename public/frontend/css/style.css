@@ -765,17 +765,18 @@ main #box-news .item .info h3 a:hover {
 }
 
 main #box-news .item .info .date {
-  font-size: 15px;
+  font-size: 13px;
   color: #000000;
-  padding: 5px 0 15px 0;
+  padding: 0px 0 5px 0;
 }
 
 main #box-news .item .info .desc {
-  line-height: 28px;
+  line-height: 20px;
   text-align: justify;
   font-size: 18px;
-  height: 140px;
+  height: auto;
   overflow: hidden;
+  
 }
 
 main #box-news .slide-news {
@@ -2703,13 +2704,22 @@ main #news .content .right .side-bar .item .list-room .item-room .info h3 a.firs
 .list-new-mobile .item .info .desc {
     height: 140px;
     overflow: hidden;
+    
 }
 
 .list-new-mobile .item .info .desc p {
     margin-bottom: 0;
+    
 }
 main #box-news .item .info .desc p {
     margin-bottom: 2px;
+    font-size: 13px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
 }
 .list-new-mobile.hidden-desktop {
     display: none;
@@ -3244,9 +3254,9 @@ main #service .list-info-service-tknt .item .info .item-step .title-step {
 }
 .w3l-feature-with-photo-1.xuong-sx-home .feature-with-photo-hny p{
 	font-size: 16px;
-	max-width: 100%;
-    margin: auto;
-    text-align: justify;
+	max-width: 95%;
+  margin: auto;
+  text-align: justify;
 }
 .xuong-sx-home .icon-info h4{
 	margin-top: 5px;
@@ -3254,7 +3264,7 @@ main #service .list-info-service-tknt .item .info .item-step .title-step {
     font-weight: bold;
 }
 .w3l-feature-with-photo-1.xuong-sx-home .icon span{
-	color: #ef9105;
+	color: #ec1d26;
 }
 .w3l-newsletter.showroom-home .form-inner-cont{
 	max-width: 675px;
