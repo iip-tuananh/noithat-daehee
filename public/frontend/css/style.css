@@ -2252,7 +2252,8 @@ main #service .feel .slide-feel .swiper-pagination-bullet.swiper-pagination-bull
 }
 
 footer {
-  background: #000000;
+  border-top: 1px solid #000;
+  background: #fff;
   padding-top: 23px;
 }
 
@@ -2300,14 +2301,14 @@ footer .logo {
 footer .name {
   text-transform: uppercase;
   font-weight: bold;
-  color: #ffaf15;
+  color: #ec1d26;
   margin-bottom: 20px;
   font-size: 18px;
 }
 
 footer .item .title-footer {
   font-size: 18px;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   font-weight: 600;
   padding-bottom: 15px;
@@ -2319,7 +2320,7 @@ footer .item .title-footer:after {
   content: "";
   width: 195px;
   height: 1px;
-  background: #ffaf15;
+  background: #ec1d26;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -2333,7 +2334,7 @@ footer .item .col-item-3 {
 footer .item .list-place p {
   position: relative;
   padding-left: 30px;
-  color: #fff;
+  color: #000;
   margin-bottom: 10px;
   font-size: 16px;
 }
@@ -2368,7 +2369,7 @@ footer .item .list-pol {
 footer .item .list-pol ul li {
   list-style: none;
   padding: 15px 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #000;
 }
 
 footer .item .list-pol ul li:first-child {
@@ -2376,7 +2377,7 @@ footer .item .list-pol ul li:first-child {
 }
 
 footer .item .list-pol ul li a {
-  color: #fff;
+  color: #000;
   font-size: 16px;
 }
 
@@ -2435,12 +2436,14 @@ footer .item .social ul {
 footer .reserved {
   margin-top: 45px;
   padding: 15px 0 35px 0;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #000;
   text-align: center;
   font-size: 16px;
-  color: #fff;
+  color: #000;
 }
-
+.reserved-link{
+  color: #000 !important;
+}
 .carousel-control-prev-icon {
   background-image: none;
 }
